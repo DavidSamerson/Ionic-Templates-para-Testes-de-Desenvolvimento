@@ -1,0 +1,53 @@
+<!--
+  Generated template for the Signup page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login To Facebook </ion-title>
+
+ <ion-buttons start  (click)="dismiss()">
+<button ion-button icon-only>
+<ion-icon name="close"></ion-icon>
+</button>
+</ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding >
+
+<form  (submit)="fboAuth()" method="post">
+<ion-list>
+
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input [(ngModel)]="loginUser" name="username" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input [(ngModel)]="loginPwd" name="password" type="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+
+<button ion-button outline block  color="primary" type="submit" (click)="pushHome()">Login Facebook</button>
+
+</div>
+</form>
+
+<p class="center" >(OR)</p>
+<div padding>
+<button ion-button block outline color="secondary" (click)="loadCreateAccount()">Create Account</button>
+</div>
+
+</ion-content>
+
+

@@ -1,0 +1,31 @@
+<ion-menu side="right" type="overlay" persistant="true"  [content]="content" class="menu">
+  <ion-header class="menu-top" >
+    <ion-toolbar>
+      <ion-title>Pages</ion-title>
+             <span class="avatar" style="background: url('../assets/ke.jpg'); background-size: cover;"></span>
+      </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="stable-bg has-expanded-header">
+    <ion-list>
+      <button ion-item >
+        Login
+      </button>
+      <button ion-item >
+        Signup
+      </button>
+    </ion-list>
+
+    <ion-list>
+      <ion-item menuClose detail-none>Close Menu</ion-item>
+    </ion-list>
+  </ion-content>
+
+
+
+<ion-footer class="menu-bottom">
+</ion-footer>
+
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

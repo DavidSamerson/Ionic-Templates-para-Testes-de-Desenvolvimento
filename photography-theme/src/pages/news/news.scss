@@ -1,0 +1,36 @@
+page-news {
+.colinline{
+		display: inline-block;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+.suggestion{
+		//max-height:60px !important;
+		//max-width:60px !important;
+		margin:0 auto;
+		padding: 1px;
+		border:1px solid lightgray;
+		border-radius: 50%;
+	}
+
+	ion-card{
+		margin:0px !important;
+		width: 100% !important;
+	}
+
+	.card-content-md{
+		padding: 5px 16px !important;
+	}
+	.card-title-md{
+		margin:0px !important;
+	}
+
+	ion-icon{
+		margin-right: 10px;
+	}
+
+	.profile-image{
+		border-top: 1px solid grey;
+	}
+}

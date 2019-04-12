@@ -1,0 +1,52 @@
+<!--
+  Generated template for the Notify page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Facebook</ion-title>
+    <ion-buttons start >
+<button ion-button icon-only>
+<ion-icon name="search"></ion-icon>
+</button>
+</ion-buttons>
+
+  <ion-buttons start  >
+<button ion-button icon-only>
+<ion-icon name="contact"></ion-icon>
+</button>
+</ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content style="overflow-y: auto" >
+
+
+<ion-list>
+  <ion-item *ngFor = " let data of items" >
+    <ion-thumbnail item-left>
+      <img src="../../assets/ke.jpg">
+    </ion-thumbnail>
+    <h2>Sandi Shared with you and santhana lakshmi</h2>
+    <h3>like the No Girls in life</h3>
+    <p>  <ion-icon name="book"></ion-icon>  about an hour ago</p>
+    <button ion-button clear item-right icon-only >   
+    <i class="material-icons  ">keyboard_arrow_right</i></button>
+
+ </ion-item>
+
+
+</ion-list>
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)"> 
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+
+</ion-content>

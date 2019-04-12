@@ -1,0 +1,9 @@
+Title: Cards
+Author: ionic4themes
+Contact: info@ionic4themes.com
+Ionic Version: 3
+----------------
+
+## 1.0 - 2018-11-5
+### Added
+- Initial release

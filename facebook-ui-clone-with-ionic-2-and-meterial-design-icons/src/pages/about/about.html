@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Get Absent Data
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+<ion-list>
+  <ion-item *ngFor ="let list of post">
+  {{list.Name}}
+    <button ion-button outline item-right icon-left (click)="doInfinite($event)">
+      <ion-icon name="star"></ion-icon>
+      {{list.Rollno}}
+    </button>
+  </ion-item>
+</ion-list>
+
+<ion-infinite-scroll (infinite)="doInfinite($event)"> 
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+
+
+
+
+</ion-content>

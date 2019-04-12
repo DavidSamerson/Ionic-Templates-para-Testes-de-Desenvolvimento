@@ -1,0 +1,28 @@
+loginUser(){
+    let data = JSON.stringify({
+      username: this.login.username,
+      password: this.login.password
+    });
+
+    let url = 'http://.../api/login/';
+
+    let headers = new Headers({
+      'Content-Type': 'application/json'
+    });
+
+    let options = new RequestOptions({
+      headers: headers
+    });
+
+    this.http.post(url, data, options).map(res => res.json()).subscribe(_data => {
+
+      if(_data.result == true){
+        this.navCtrl.push(ContactPage);
+        this.log = _data;
+      }
+    });
+
+      $data[] = array(
+        'id' => $row['id'],
+        'name' => $row['name']
+    );

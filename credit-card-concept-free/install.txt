@@ -1,0 +1,12 @@
+Getting Started
+--------------
+Copy the content of src folder into your development folder and execute: 
+
+ionic serve
+
+(Say yes to "Install @ionic/app-scripts?" question)
+
+How to Deploy
+-------------
+https://ionicframework.com/docs/cli/cordova/build/
+

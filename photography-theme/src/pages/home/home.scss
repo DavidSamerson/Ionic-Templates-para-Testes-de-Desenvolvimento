@@ -1,0 +1,51 @@
+page-home {
+
+
+
+	.tallHeader{
+		height:100px;
+	}
+
+	ion-row{
+		text-align: center !important;
+	}
+	ion-col{
+
+	}
+	.social{
+		position: absolute;
+		width: 100%;
+		text-align: right;
+		padding: 10px;
+		margin-right: 10px;
+
+	}
+	.social-icon{
+		font-size: 30px;
+		margin-right: 16px;
+	}
+	.show{
+		width: 100%;
+		height: auto;
+		padding:0px;
+		margin:0px;
+
+	}
+
+	
+	.imgIcon{
+		
+		//display: none;
+		margin: 0 auto !important;
+		position:  absolute;
+		//width:100%;
+		//height: 100%;
+
+		top:40%;
+		font-size:  40px;
+		//opacity: 0.6;
+		z-index: 99;
+
+	}
+	
+}

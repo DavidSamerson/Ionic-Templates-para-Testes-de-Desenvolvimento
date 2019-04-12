@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Edit Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-my-profile" padding>
+    <form (ngSubmit)="UpdateProfile()" #userForm="ngForm">
+      <ion-row>
+        <ion-col col-12>
+          <div class="photo">
+            <div class="image">
+              <img class="avatar" src="https://www.gstatic.com/webp/gallery3/2.png">
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <ion-list>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Name" [(ngModel)]="user.name" name="user_name"
+              required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="text" placeholder="E-mail" [(ngModel)]="user.email" name="user_email"
+              required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="{{type}}" placeholder="New Password" [(ngModel)]="user.password" name="password"></ion-input>
+            <button *ngIf="!showPass" ion-button clear icon-only item-right color="primary" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-off-outline"></ion-icon></button>
+            <button *ngIf="showPass" ion-button clear icon-only item-right color="primary" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-outline"></ion-icon></button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button block type="submit" [disabled]="!userForm.form.valid">Update</button>
+      </ion-col>
+    </ion-row>
+    </form>
+</ion-content>

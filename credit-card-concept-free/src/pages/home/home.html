@@ -1,0 +1,43 @@
+<ion-content padding>
+  <div *ngFor="let card of cards">
+    <ion-grid [class.cardON]="card.state=='ON'" [class.cardOFF]="card.state=='OFF'">
+      <ion-row>
+        <ion-col class="state">
+          <div class="msg">
+            <span [class.ON]="card.state=='ON'" [class.OFF]="card.state=='OFF'"></span> Card {{card.state}}
+          </div>
+        </ion-col>
+        <ion-col class="logo">
+          <img class="brand" [src]="card.logo">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="chip">
+          <img src="assets/img/chip.png">
+        </ion-col>
+      </ion-row>
+      <ion-row class="digits">
+        <ion-col class="number">
+          {{card.a}}
+        </ion-col>
+        <ion-col class="number">
+          {{card.b}}
+        </ion-col>
+        <ion-col class="number">
+          {{card.c}}
+        </ion-col>
+        <ion-col class="number">
+          {{card.d}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="date">
+          Expires: {{card.expires}}
+        </ion-col>
+        <ion-col class="bank">
+          {{card.bank}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
